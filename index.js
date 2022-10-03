@@ -7,7 +7,10 @@ const io = require('socket.io')(server, {
 });
 
 
-
+app.get('/', function(req, res){
+   res.send("Hello world!");
+});
+ 
 /*  */
     io.on('connection',(socket)=>{
         /* phấn của socket io, socket.on là nhận, io.mit là gởi */
